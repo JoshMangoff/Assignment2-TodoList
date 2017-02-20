@@ -1,3 +1,8 @@
+<!--  home.html
+      Josh Mangoff
+      200284512
+      This app uses CRUD for a todo list -->
+
 <ion-header>
   <ion-navbar>
     <ion-title>Todos</ion-title>
@@ -6,31 +11,34 @@
 
 <ion-content padding>
   <h1>Todo List</h1>
+  <!-- Add Todo button -->
   <button ion-button color="primary" (click)="addTodo()">
     <ion-icon name="add"></ion-icon> Add Todo
   </button>
   <ion-list>
     <ion-item-sliding *ngFor="let todo of todos | async">
 
+      <!-- Grid with data -->
       <ion-item>
         <ion-row>
           <ion-col>
-
+            <ion-checkbox ng-checked="{todo.completed}" (click)="checkTodo(todo)"></ion-checkbox>
           </ion-col>
           <ion-col>
             {{todo.name}}
           </ion-col>
           <ion-col>
-            {{todo.desc}}
+            {{todo.notes}}
           </ion-col>
         </ion-row>
       </ion-item>
 
+      <!-- Edit and delete buttons -->
       <ion-item-options side="right">
-        <button ion-button color="primary" icon-Left>
+        <button ion-button color="primary" (click)="editTodo(todo)">
           <ion-icon name="settings"></ion-icon> Edit
         </button>
-        <button ion-button color="danger" icon-Left>
+        <button ion-button color="danger" (click)="deleteTodo(todo)">
           <ion-icon name="trash"></ion-icon> Delete
         </button>
       </ion-item-options>

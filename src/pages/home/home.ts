@@ -1,3 +1,8 @@
+//home.ts
+//Josh Mangoff
+//200284512
+//This app uses CRUD for a todo list
+
 import { Component } from '@angular/core';
 
 import { NavController, AlertController } from 'ionic-angular';
@@ -21,8 +26,25 @@ export class HomePage {
   }
 
   //methods
+
+  //For adding a Todo item
   addTodo(){
     this.navCtrl.push(DetailsPage);
+  }
+
+  //For editing a Todo item
+  editTodo(){
+
+  }
+
+  //For changing the checkbox value
+  checkTodo(){
+
+  }
+
+  //For deleting a Todo item
+  deleteTodo(todo){
+    this.todos.remove(todo);
   }
 
 }

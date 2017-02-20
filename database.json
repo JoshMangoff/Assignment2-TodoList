@@ -1,9 +1,19 @@
+//database.json
+//Josh Mangoff
+//200284512
+//This app uses CRUD for a todo list
+
 {
     "todos":[
         {
-            "name": "Example",
-            "desc": "Description",
-            "checked": false
+            "name": "FExample",
+            "notes": "Notes",
+            "completed": false
+        },
+        {
+            "name": "TExample",
+            "notes": "Notes",
+            "completed": true
         }
     ]
 }

@@ -1,3 +1,8 @@
+//details.ts
+//Josh Mangoff
+//200284512
+//This app uses CRUD for a todo list
+
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
