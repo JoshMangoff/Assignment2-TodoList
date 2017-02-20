@@ -9,9 +9,14 @@ import {AngularFire, FirebaseListObservable} from 'angularfire2';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  //properties
   todos: FirebaseListObservable<any>;
+
+  //constructor
   constructor(public navCtrl: NavController, af: AngularFire) {
     this.todos = af.database.list('/todos');
   }
+
+  //methods
 
 }
