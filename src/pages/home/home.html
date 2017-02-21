@@ -23,7 +23,7 @@
       <ion-item>
         <ion-row>
           <ion-col>
-            
+            <!-- This is where a checkbox would go if it didn't wipe out the other text -->
           </ion-col>
           <ion-col>
             {{todo.name}}
@@ -34,11 +34,8 @@
         </ion-row>
       </ion-item>
 
-      <!-- Edit and delete buttons -->
+      <!-- Delete button -->
       <ion-item-options side="right">
-        <button ion-button color="primary" (click)="editTodo(todo)">
-          <ion-icon name="settings"></ion-icon> Edit
-        </button>
         <button ion-button color="danger" (click)="deleteTodo(todo)">
           <ion-icon name="trash"></ion-icon> Delete
         </button>

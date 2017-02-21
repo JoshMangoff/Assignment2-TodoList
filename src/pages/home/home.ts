@@ -22,6 +22,7 @@ export class HomePage {
 
   //constructor
   constructor(public navCtrl: NavController, public alertCtrl: AlertController, af: AngularFire) {
+    //connect to database
     this.todos = af.database.list('/todos');
   }
 
@@ -30,16 +31,6 @@ export class HomePage {
   //For adding a Todo item
   addTodo(){
     this.navCtrl.push(DetailsPage);
-  }
-
-  //For editing a Todo item
-  editTodo(){
-    
-  }
-
-  //For changing the checkbox value
-  checkTodo(){
-
   }
 
   //For deleting a Todo item
