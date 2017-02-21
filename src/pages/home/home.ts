@@ -34,7 +34,7 @@ export class HomePage {
 
   //For editing a Todo item
   editTodo(){
-
+    
   }
 
   //For changing the checkbox value

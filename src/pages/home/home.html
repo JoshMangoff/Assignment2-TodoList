@@ -15,6 +15,7 @@
   <button ion-button color="primary" (click)="addTodo()">
     <ion-icon name="add"></ion-icon> Add Todo
   </button>
+
   <ion-list>
     <ion-item-sliding *ngFor="let todo of todos | async">
 
@@ -22,7 +23,7 @@
       <ion-item>
         <ion-row>
           <ion-col>
-            <ion-checkbox ng-checked="{todo.completed}" (click)="checkTodo(todo)"></ion-checkbox>
+            
           </ion-col>
           <ion-col>
             {{todo.name}}
